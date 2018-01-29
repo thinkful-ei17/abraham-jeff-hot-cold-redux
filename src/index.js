@@ -1,6 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
+import * as actions from './actions';
+import store from './store';
+
+
 import './reset.css';
 import './index.css'; 
 
@@ -11,6 +15,17 @@ ReactDOM.render(
   document.getElementById('root')
 );
   
+
+console.log(store.getState());
+
+console.log(store.dispatch(actions.makeGuess('10')));
+
+console.log(store.getState());
+
+console.log(store.dispatch(actions.updateFeedback('You made a guess!')));
+
+console.log(store.getState());
+
 
 /* Todo:
 1. Make the action creators
