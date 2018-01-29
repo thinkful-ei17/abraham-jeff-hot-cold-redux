@@ -23,7 +23,6 @@ export const makeGuess = guess => ({
   guess
 });
 
-
 export const UPDATE_FEEDBACK = 'UPDATE_FEEDBACK';
 export const updateFeedback = message => ({
   type: UPDATE_FEEDBACK,
@@ -34,13 +33,6 @@ export const RESET_GAME = 'RESET_GAME';
 export const resetGame = () => ({
   type: RESET_GAME,
 });
-
-
-//  guesses: [],
-//  feedback: 'Make your guess!',
-//  auralStatus: '',
-//  correctAnswer: Math.round(Math.random() * 100) + 1
-
 
 /*
 
