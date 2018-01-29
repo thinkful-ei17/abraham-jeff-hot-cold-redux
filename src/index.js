@@ -26,6 +26,15 @@ console.log(store.dispatch(actions.updateFeedback('You made a guess!')));
 
 console.log(store.getState());
 
+console.log(store.dispatch(actions.resetGame()));
+
+console.log(store.getState());
+
+
+
+console.log(store.dispatch(actions.makeGuess('999')));
+
+console.log(store.getState());
 
 /* Todo:
 1. Make the action creators

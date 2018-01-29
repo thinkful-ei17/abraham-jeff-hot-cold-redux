@@ -21,8 +21,13 @@ export const gameReducer = (state=initialState, action) => {
     };
   }
   
-  else if (action.type === action.RESET_GAME) {
+  else if (action.type === actions.RESET_GAME) {
     console.log('Resetting state');
+    // return {
+    //   guesses: [...state.guesses, '777']
+    //   // ...state,
+    //   // guesses: action.guess
+    // };
     return initialState;
   }
 
